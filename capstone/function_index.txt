@@ -1,0 +1,37 @@
+function_index.txt
+
+Working in my program I often lost valuable time lost in where to look for methods and functions, here is an attempt to index the order of methods and functions in our program.
+
+classes
+
+Competency
+    __init__(self,user_id,first_name,last_name,phone,email,password,active,date_created,hire_date,user_type)
+Users
+    __init__
+    set_all(self,user_id,first_name,last_name,phone,email,password,active,date_created,hire_date,user_type)
+    update(self, cursor)
+    edit(self,user_columns)
+    update_pass_sql(self,cursor, new_password, email) 
+    print_user_info
+    print_user_competency_summary(self,user_id,cursor)
+    check_password(self, email, password, cursor)
+
+functions
+
+pull_emails()
+collect_info()
+collect_comp_info()
+collect_assessment_info()
+collect_result_info()
+initialize_database(cursor)
+load(cursor,user_email)
+test_mail_login(user_email)
+check_default_password()
+select_user(email)
+competency_summary(email)
+available()
+competency_detail()
+user_assessment_menu()
+managment_assessment_menu()
+manager_menu()
+run_menu()

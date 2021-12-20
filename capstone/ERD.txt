@@ -1,0 +1,18 @@
+Users
+
+first_name
+last_name
+phone
+email
+password
+active
+date_created
+hire_date
+user_type
+user_type, either M or U for a Manager or Users
+
+Assessments
+assessment_type, can be quiz,test,interview, other as needed, ect.
+
+Competencies
+scale_notes, optional information used in determining 0-4 scale rating. 
