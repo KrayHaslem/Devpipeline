@@ -1,0 +1,43 @@
+This is the folder for the Capstone Project by Krayden Haslem for DevPipeline December 2021.
+
+In our folder main.py is our application file. 
+The goal of main.py is to be our Competency Tracking Tool.
+This file was designed to run in a terminal utalizing a pip enviroment and Python 3.9.
+If you are using a terminal in this pip enviroment you may need to install bcrypt to your 
+pip lock file in order for the program to function correctly.
+
+First, for our database please refer to the PDF file in this folder Compentency Tool ERD.pdf.
+
+You can find some of the descriptions for the not self explainitory ERD references in ERD.txt
+
+The file schema.sql is a Schema for the database that we have. If you wish you can remove capstone.db 
+from this folder and run main.py in the terminal and you will get an empty version of our database, this
+should be the procedure followed in a commercial application or testing initial set-up instruction is
+provided to the user for this set-up procedure and it will not be mentioned here as this should be clear
+feel free to email me with questions on this set up k.haslem@icloud.com. 
+
+For testing and demonstration purposes capstone.db has been pre-populated with data. As mentioned removal
+of this file from the folder can allow you to test initialization. Additional tests may be ran for a 
+new user and manager having never used or logged in to the system. These two users are saved in the 
+database as Test Manager and Test User, enter thier email's one at a time to see this experience. 
+m@email.com
+u@email.com
+
+Note that passwords use bcrypt incription to satisfy our CEO's desire for database security. This means 
+passwords that you see in the database DO NOT match the actual passwords used. Some info for test users:
+
+Generic Manager with Assessment Data
+Generic Manager: email gm@mail.com password gm
+
+Generic User with Assessment Data
+Bob User: email bob@bobsemail.com password bobpassword
+
+Inactive Manager/Users with Assessment Data
+Evil User: evil@evilemail.com
+Not Smart User: no@email.com
+* Note these inactives do not have bcrypted passwords and they are set to default 'password' because if
+these users try and login their emails are actually hidden from the login and they are unable to use the
+program this feature ensures we inactive status users do not manipulate our data.
+
+Lazy like me?
+Quick Login (Manager): email q password q 

@@ -19,10 +19,10 @@ CREATE TABLE IF NOT EXISTS Assessments (
 	due_date	TEXT,
 	creation_date	TEXT,
 	competency_id	INTEGER,
-	FOREIGN KEY(competency_id) REFERENCES Compentencies(competency_id)
+	FOREIGN KEY(competency_id) REFERENCES Competencies(competency_id)
 );
 
-CREATE TABLE IF NOT EXISTS Compentencies (
+CREATE TABLE IF NOT EXISTS Competencies (
     competency_id INTEGER PRIMARY KEY AUTOINCREMENT ,
     competency_name TEXT NOT NULL UNIQUE,
     competency_description TEXT,
